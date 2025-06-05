@@ -9,11 +9,64 @@ a:link , a:visited{
     text-decoration: none;
     color: #333;
 }
-#fullpage .section:nth-child(1){ 
-    background: url(./image/메인.jpg) center/cover;
+#fullpage .section:nth-child(1) .fp-tableCell{ 
+    /* background: url(./image/메인.jpg) center/cover; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    color: darkblue;
 }
 #fullpage .section:nth-child(2){ 
     background: url(./image/프로필.jpg) center/cover;
 }
-#fullpage .section:nth-child(3){ background-color: violet;}
+/* #fullpage .section:nth-child(3){ } */
 #fullpage .section:nth-child(4){ background-color: orange;}
+
+.menu{
+    width: 100%;
+    height: 38px;
+    background-color: rgba(100, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.menu ul{
+    width: 30%;
+    display: flex;
+    min-width: 160px;
+}
+.menu li{
+    width: 25%;
+    line-height: 38px;
+    text-align: center;
+}
+.menu a{
+    color: white;
+}
+#fullpage .section:nth-child(3) .fp-tableCell{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#fullpage .section:nth-child(3) .wrap{
+    width: 80%;
+    min-width: 380px;
+    margin-top: 120px;
+}
+#fullpage .section:nth-child(3) .wrap ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: gray;
+}
+#fullpage .section:nth-child(3) .wrap li{
+    width: 25%;
+    height: 320px;
+
+}
+#fullpage .section:nth-child(3) img{
+    width: 100%;
+    height: 100%;
+}
