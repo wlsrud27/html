@@ -21,8 +21,28 @@ a:link , a:visited{
     background: url(./image/프로필.jpg) center/cover;
 }
 /* #fullpage .section:nth-child(3){ } */
-#fullpage .section:nth-child(4){ background-color: orange;}
-
+#fullpage .section:nth-child(4){ 
+    background-color: orange;
+    padding: 20px;
+}
+#fullpage .section:nth-child(4) .article .fp-tableCell{
+    display: flex;
+    flex-wrap: wrap;
+}
+#fullpage .section:nth-child(4) h1{
+    width: 100%;
+    margin-top: 42px;
+    transform: translate(0,0);
+}
+#fullpage .section:nth-child(4) .article{
+    width: 47%;
+    margin: 1%;
+    border: 1px solid red;
+}
+#fullpage .section:nth-child(4) .article img{
+    width: 250px;
+    border-radius: 12px;
+}
 .menu{
     width: 100%;
     height: 38px;
